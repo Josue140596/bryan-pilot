@@ -1,0 +1,29 @@
+/*==========
+ Colors
+  Primary: #171717 "black"
+  Secundary: #DFE300 "yellow"
+  Tertiary: #1b1b1b "black-gray"
+
+ ==============*/
+
+html, body{
+    background-color: #1b1b1b;
+    margin: 0;
+    font-family: Reem Kufi;
+    font-weight: 400;
+}
+
+
+.contentHome{
+  display: grid;
+  height: 100vh;
+  
+  grid-template-columns: [x0] 220px [x1];
+  grid-template-rows: [y0] 0px;
+
+}
+
+
+ 
+ 
+  

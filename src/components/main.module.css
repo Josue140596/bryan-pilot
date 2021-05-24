@@ -1,0 +1,55 @@
+/*==========
+ Colors
+  Primary: #171717 "black"
+  Secundary: #DFE300 "yellow"
+  Tertiary: #1b1b1b "black-gray"
+
+ ==============*/
+
+.main{
+    grid-column: x1 / x3;
+    grid-row: y0 / y3;
+
+    display: grid;
+    grid-template-rows: [y0] auto [y1] 150px;
+  }
+  
+/*
+ <---Content-main--->
+*/
+
+
+.content_title_page{
+    grid-row: y0/y0;
+    display: flex;
+
+}
+
+.content_texts{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.subcontent_text{
+  color: white;
+  text-align: center;
+}
+.firstText{
+  font-size: 80px;
+  letter-spacing: 0.2em;
+}
+.seconText{
+  color: #858585;
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  
+}
+.block{
+  
+}
+
+.content_picture_yellow{
+  width: 20%;
+}

@@ -1,0 +1,115 @@
+/*==========
+ Colors
+  Primary: #171717 "black"
+  Secundary: #DFE300 "yellow"
+  Tertiary: #1b1b1b "black-gray"
+
+  avatar: #212121
+
+ ==============*/
+
+
+ 
+.sidenav {
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    background-color: #171717;
+    overflow: hidden;
+    grid-column: x0 / x1;
+    grid-row: y0 / y3;
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    display: grid;
+    grid-template-rows: [avatar] 100px [menunav] auto;
+
+  }
+  
+  
+  
+
+
+/*
+=========avatar section========
+*/
+
+  .avatar_sidenav{
+    grid-row: avatar;
+ 
+    background-color: #212121;
+    display: flex;
+    margin: 12px;
+    overflow: hidden;
+  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+
+  .img_content{
+  
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .name_content{
+  
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+   
+   
+  }
+
+  .box_shadow_name{
+    
+    background-color: #494949;
+    color: white;
+    border-radius: 12px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 2px;
+    font-size: 14px;
+   
+    
+  }
+
+/*
+=========nav section========
+*/
+  .nav_menu{
+    grid-row: menunav;
+    padding-top: 25px;
+  }
+  .nav_menu div{
+    background-color:#DFE300 ;
+    margin-top: 35px;
+    display: flex;
+    height: 60px;
+  }
+
+  /*==SImbolABout==*/
+  .simbolStyle{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    position: relative;
+  }
+  .links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: black;
+  }
