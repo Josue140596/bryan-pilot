@@ -24,6 +24,26 @@ html, body{
 }
 
 
+
+  /*
+  ====Resposive=======
+  */
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .contentHome{
+      grid-template-columns: [x0] auto;
+      grid-template-rows: [y0] 100px [y1] auto;
+    
+    }
+   
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   
+  }
+
+
  
  
   

@@ -14,7 +14,8 @@ import {
   name_content,
   box_shadow_name,
   simbolStyle,
-  links
+  links,
+
 } from "./sideBar.module.css";
 
 const SideBar = () => {
@@ -23,12 +24,14 @@ const SideBar = () => {
       <div className={avatar_sidenav}>
         <div className={img_content}>
           <AvatarImg />
+         
         </div>
 
         <div className={name_content}>
           <div className={box_shadow_name}>
             <p>Bryan Sánchez</p>
           </div>
+          
         </div>
       </div>
 

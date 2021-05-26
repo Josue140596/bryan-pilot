@@ -46,10 +46,31 @@
   text-align: center;
   
 }
-.block{
-  
-}
+
 
 .content_picture_yellow{
   width: 20%;
 }
+
+ /*
+  ====Resposive=======
+  */
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main{
+      grid-column: x0;
+      grid-row: y1;
+    }
+    .content_title_page{
+      flex-direction: column;
+    }
+    .content_texts{
+      width: auto ;
+    }
+   
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   
+  }

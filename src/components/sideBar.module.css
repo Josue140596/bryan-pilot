@@ -35,15 +35,17 @@
 =========avatar section========
 */
 
-  .avatar_sidenav{
+  .avatar_sidenav{    
     grid-row: avatar;
- 
     background-color: #212121;
+    background-image: url(./img/Info-personal.png);
+    background-size: cover;
     display: flex;
+    border-radius: 12px;
     margin: 12px;
     overflow: hidden;
-  
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   }
 
 
@@ -92,6 +94,17 @@
     margin-top: 35px;
     display: flex;
     height: 60px;
+    cursor: pointer;
+  }
+  .nav_menu div:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: #1b1b1b;
+    box-shadow: 1px 1px 4px 2px #131311;
+  }
+  .nav_menu div:hover a {
+  
+    color: white;
   }
 
   /*==SImbolABout==*/
@@ -112,4 +125,70 @@
     line-height: 36px;
     letter-spacing: 0.1em;
     color: black;
+  }
+
+  
+
+
+  /*
+  ====Resposive=======
+  */
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .sidenav {
+      grid-column: x0;
+      grid-row: y0;
+      width: 100%;
+      height: auto;
+      grid-template-columns: [avatar] 150px [menunav] auto;
+      grid-template-rows: [avatar] 100px;
+      box-shadow: 1px 1px 6px 3px black;
+    }
+    .avatar_sidenav{
+      grid-row: avatar;
+      grid-column: avatar;
+      flex-direction: column;
+      margin: 10px;
+    }
+    .img_content{
+      width: 100%;
+      height: 100%;
+    
+    }
+    .name_content{
+      width: auto;
+    }
+    .nav_menu{
+      grid-column: menunav;
+      grid-row: avatar;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      align-items: flex-end;
+    }
+    .simbolStyle{
+      display: none;
+    }
+    .nav_menu div{
+      background-color: #171717;
+    }
+    .nav_menu div a {
+  
+      color: white;
+    }
+    
+    .nav_menu div:hover {
+      transition: 0.5s;
+      transform: scale(1.1);
+      box-shadow: none;
+      background-color: #171717;
+      
+    }
+    
+   
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   
   }

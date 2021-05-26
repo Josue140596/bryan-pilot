@@ -1,6 +1,9 @@
+<?xml-stylesheet type="text/css" href="../components/sideBar.module.css" ?>
+
 <svg width="94" height="106" viewBox="0 0 94 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+
 <g filter="url(#filter0_d)">
-<rect width="16.8203" height="100.8307" transform="matrix(0.8203 0.571933 -0.606602 0.795005 65.5046 10)" fill="#DFE300"/>
+<rect class="block_yellow" width="16.8203" height="100.8307" transform="matrix(0.8203 0.571933 -0.606602 0.795005 65.5046 10)" fill="#DFE300"/>
 </g>
 <g filter="url(#filter1_d)">
 <rect width="16.7873" height="83.13" rx="8" transform="matrix(0.79364 -0.608387 0.642705 0.766114 24.5073 31.2132)" fill="#171717"/>

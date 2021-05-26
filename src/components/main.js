@@ -11,7 +11,6 @@ import {
   subcontent_text,
   firstText,
   seconText,
-  block,
   content_picture_yellow,
   content_texts,
 } from "./main.module.css";
@@ -25,7 +24,7 @@ const Main = ({ children }) => {
             <p className={firstText}>HI I'M BRYAN</p>
             <p className={seconText} >I'M DEVELOPER</p>
           </div>
-          <div className={block}></div>
+          <div ></div>
         </section>
 
         <section className={content_picture_yellow}>

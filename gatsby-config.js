@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "bryan-portafolio-pilot",
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: `gatsby-plugin-google-fonts`,
