@@ -13,6 +13,7 @@ import {
   seconText,
   content_picture_yellow,
   content_texts,
+  bock_yellow
 } from "./main.module.css";
 
 const Main = ({ children }) => {
@@ -28,10 +29,10 @@ const Main = ({ children }) => {
         </section>
 
         <section className={content_picture_yellow}>
-          <Rect/>
+          <Rect className={bock_yellow}/>
         </section>
       </section>
-
+      
       {children}
     </main>
   );

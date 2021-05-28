@@ -101,6 +101,7 @@
     transform: scale(1.1);
     background-color: #1b1b1b;
     box-shadow: 1px 1px 4px 2px #131311;
+   
   }
   .nav_menu div:hover a {
   
@@ -144,6 +145,8 @@
       grid-template-columns: [avatar] 150px [menunav] auto;
       grid-template-rows: [avatar] 100px;
       box-shadow: 1px 1px 6px 3px black;
+      background-image: url(./img/nav-responsive-tablet.png);
+      background-size: cover;
     }
     .avatar_sidenav{
       grid-row: avatar;
@@ -171,7 +174,7 @@
       display: none;
     }
     .nav_menu div{
-      background-color: #171717;
+      background-color: #17171700;
     }
     .nav_menu div a {
   
@@ -182,7 +185,7 @@
       transition: 0.5s;
       transform: scale(1.1);
       box-shadow: none;
-      background-color: #171717;
+      background-color: #17171700;
       
     }
     
@@ -190,5 +193,42 @@
   }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-   
+    .sidenav{
+      grid-template-columns: [colum0] 100%;
+      grid-template-rows: [row0] 50px [row1] auto;
+    }
+    .avatar_sidenav{
+      grid-column: colum0;
+    grid-row: row0;
+    margin: 0;
+    grid-column: colum0;
+    grid-row: row0;
+    margin: 0;
+    flex-direction: row;
+    }
+    .img_content{
+      width: 20%;
+      justify-content: end;
+
+    }
+    .name_content{
+      width: 80%;
+    }
+    .nav_menu{
+      grid-column: colum0;
+      grid-row: row1;
+      grid-column: colum0;
+    grid-row: row1;
+    align-items: center;
+    flex-direction: column;
+    }
+    .nav_menu div{
+      background-color: #17171700;
+      margin-top: 6px;
+    height: auto;
+    }
+    .nav_menu div a {
+  
+      color: white;
+    }
   }

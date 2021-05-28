@@ -50,23 +50,32 @@
 
 .content_picture_yellow{
   width: 20%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
- /*
-  ====Resposive=======
-  */
+/*
+====Resposive=======
+*/
 
-  @media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main{
-      grid-column: x0;
-      grid-row: y1;
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main{
+    grid-column: x0;
+    grid-row: y1;
     }
     .content_title_page{
       flex-direction: column;
     }
     .content_texts{
       width: auto ;
+    }
+    .content_picture_yellow{
+      width: 100%;
+    }
+    .bock_yellow{
+      width: 100%;
+      height: 20px;
     }
    
   }
