@@ -3,6 +3,7 @@ import React from "react";
 //SVG
 
 import Rect from '../assets/rect.inline.svg'
+import About from "./about";
 
 //Styles
 import {
@@ -31,8 +32,10 @@ const Main = ({ children }) => {
         <section className={content_picture_yellow}>
           <Rect className={bock_yellow}/>
         </section>
+        
       </section>
-      
+
+      <About/>
       {children}
     </main>
   );

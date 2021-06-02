@@ -11,7 +11,7 @@
     grid-row: y0 / y3;
 
     display: grid;
-    grid-template-rows: [y0] auto [y1] 150px;
+    grid-template-rows: [y0] auto [y1] auto [y2] 150px  ;
   }
   
 /*
