@@ -1,97 +1,168 @@
-.about{
-    grid-row: y1;
-    display: flex;
-    flex-direction: column;
+.about {
+  grid-row: y1;
+  display: flex;
+  flex-direction: column;
 }
 
-.aboutMe{
+.aboutMe {
+  display: flex;
+  position: relative;
+
+  height: 500px;
+  /* margin change when responsive */
+  margin: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle {
+  position: absolute;
+  z-index: 1;
+  background-color: #dfe300;
+  width: 175px;
+  height: 120px;
+  transform: rotate(45deg);
+  left: -2%;
+  top: 14%;
+}
+.content {
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0px 4px 4px #111111;
+
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.content p {
+  color: white;
+  font-size: 24px;
+  margin: 27px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.2em;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titles span {
+  width: 30%;
+  height: 0.5px;
+  background-color: #dfe300;
+}
+
+.education {
+  display: flex;
+  position: relative;
+  margin: 0px 60px 300px;
+  height: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle_two {
+  position: absolute;
+  z-index: 1;
+  background-color: #dfe300;
+  width: 175px;
+  height: 120px;
+  transform: rotate(139deg);
+  left: 60%;
+  top: -30%;
+}
+
+.skills {
     display: flex;
     position: relative;
-  
-    height: 500px;
-    /* margin change when responsive */
-    margin: 60px;
+    margin: 550px 60px 800px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
-.rectangle{
+
+.rectangle_three {
     position: absolute;
     z-index: 1;
-    background-color: #DFE300;
-    width: 175px;
-    height: 120px;
-    transform: rotate(45deg);
-    left: -2%;
-    top: 14%;
+    background-color: #dfe300;
+    width: 713px;
+    height: 121px;
+    transform: rotate(50deg);
+    left: -32%;
+    top: 75%;
 }
-.content{
-    position: absolute;
-    z-index: 2;
-    box-shadow: 0px 4px 4px #111111;
-    border-radius: 12px;
-    background-color: #272727;
+
+.content_img_languages{
+    padding: 50px;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 13%);
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    background-color: #1b1b1b;
+    flex-direction: row;
     flex-wrap: wrap;
-    
+    margin: 3%;
+    justify-content: space-evenly;
 }
-.content p{
-    color: white;
-    font-size: 24px;
-    margin: 27px;
-    line-height: 30px;
-    text-align: justify;
-    letter-spacing: 0.2em;
+.cards_programming{
+    width: 24%;
+    box-shadow: 0 0 6px 3px rgb(0 0 0 / 25%);
+    height: 250px;
+    background: #3f3f3f;
+    overflow: hidden;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
 }
-.titles{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.titles span{
-    width: 30%;
-    height: 0.5px;
-    background-color: #DFE300;
-
-}
-
-
-.education{
-
-}
-.skills{
-
-}
-
-
 /*
 ====Resposive=======
 */
 
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .aboutMe{
-      
-        /* margin change when responsive */
-        margin: 0px;
-     
-    
-    }
-    .content{
-        
-        width: auto;
-    }
-    
+@media only screen and (min-width: 1400px) {
+  /* For tablets: */
+  .aboutMe {
+    /* margin change when responsive */
+
+    margin: 200px;
+  }
+  .education {
+    margin: 200px;
+  }
 }
-    @media only screen and (max-width:500px) {
-      /* For mobile phones: */
-      
-      .aboutMe{
-          
-        margin-top: 50%;
-      }
-    }
-  
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .aboutMe {
+    /* margin change when responsive */
+    margin: 0px;
+  }
+  .education {
+    margin: 0px;
+    height: 500px;
+  }
+  .content {
+    margin: 44px;
+  }
+  .rectangle_two {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+
+  .content {
+    margin: 0px;
+  }
+  .aboutMe {
+    margin-top: 50%;
+  }
+  .education {
+    margin: 0px;
+    height: 750px;
+  }
+  .rectangle_two {
+    display: none;
+  }
+}
