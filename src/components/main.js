@@ -16,15 +16,37 @@ import {
   content_texts,
   bock_yellow
 } from "./main.module.css";
+import Proyects from "./proyects";
+
+// Data graphql
+import { graphql, useStaticQuery } from "gatsby";
 
 const Main = ({ children }) => {
+
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            subTitle
+          }
+        }
+      }
+    `
+  )
+  
+  const {title, subTitle} = data.site.siteMetadata;
+
+
   return (
-    <main className={main}>
+    <main  className={main}>
       <section className={content_title_page}>
         <section className={content_texts}>
           <div className={subcontent_text}>
-            <p className={firstText}>HI I'M BRYAN</p>
-            <p className={seconText} >I'M DEVELOPER</p>
+       
+            <p className={firstText}>{title}</p>
+            <p className={seconText} >{subTitle}</p>
           </div>
           <div ></div>
         </section>
@@ -36,8 +58,11 @@ const Main = ({ children }) => {
       </section>
 
       <About/>
+      <Proyects/>
       {children}
     </main>
   );
 };
+
+
 export default Main;

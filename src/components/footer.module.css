@@ -1,3 +1,130 @@
-.footer{
-    grid-row: y2;
+.footer {
+  grid-row: y3;
+
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
 }
+
+.section_email {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.section_email input {
+  border: solid 1px yellow;
+  background-color: rgba(255, 222, 173, 0);
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  outline: none;
+  font-size: 20px;
+  color: aliceblue;
+  box-shadow: 1px 1px 12px 1px #dee200;
+  margin: 15px;
+}
+.section_email textarea {
+  border: solid 1px yellow;
+  background-color: rgba(255, 222, 173, 0);
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 1px 1px 12px 1px #dee200; 
+  outline: none;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 15px;
+}
+.btn_contact {
+  height: 50px;
+  height: 50px;
+  border: none;
+  background-color: #dee200;
+  font-size: 25px;
+  border-radius: 5px;
+  font-family: "Reem Kufi";
+  letter-spacing: 2px;
+  box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.section_social_media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  
+}
+.section_social_media span {
+  display: flex;
+  height: 1px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+.icons_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.icons_content a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.iconEachOne {
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.iconEachOne:hover {
+  color: rgb(122, 122, 122);
+}
+
+.footer_last {
+  width: 100%;
+  text-align: center;
+  background-color: #171717;
+}
+
+.footer span{
+  font-size: 18px;
+  color: rgb(252, 70, 70);
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For screns: */
+  .section_email textarea {
+    width: 50%;
+  }
+  
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  
+  .section_email input {
+   
+  
+    width: 60%;
+    margin: 10px 0 10px 0;
+   
+  }
+  .section_email textarea {
+   
+    width: 60%;
+    margin: 10px 0 10px 0;
+   
+  }
+  .section_email {
+    width: 100%;
+  }
+  .icons_content {
+    justify-content: center;
+  }
+}
+

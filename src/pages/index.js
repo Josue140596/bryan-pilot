@@ -1,16 +1,27 @@
 import React from "react";
-import Footer from "../components/footer";
-import Main from "../components/main";
+
+
+
+
 
 //Components
 import SideBar from "../components/sideBar";
+import Main from "../components/main";
+import Footer from "../components/footer";
 
 //Styles
 import { contentHome } from "../styles/global.module.css";
+// Data graphql
+import { graphql } from "gatsby";
+
+
 
 const Home = () => {
+
+  
+
   return (
-    <div className={contentHome}>
+    <div id="first-content" className={contentHome}>
       <title>I'm Bryan</title>
       {/*=============================== 
         Section of content S I D E N A V
@@ -19,6 +30,7 @@ const Home = () => {
       {/*=============================== 
         Section of content M A I N
       ================================*/}
+      
       <Main>
         {/*==================================
             Section of content F O O T E R
@@ -28,5 +40,14 @@ const Home = () => {
     </div>
   );
 };
+
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }`
 
 export default Home;

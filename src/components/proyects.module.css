@@ -1,0 +1,120 @@
+/*==========
+ Colors
+  Primary: #171717 "black"
+  Secundary: #DFE300 "yellow"
+  Tertiary: #1b1b1b "black-gray"
+
+  avatar: #212121
+
+ ==============*/
+.proyects {
+  grid-row: y2;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.rectangle {
+  width: 1545px;
+  height: 120px;
+  transform: rotate(140deg);
+  background-color: #dfe300;
+  left: 4%;
+  left: -36%;
+  top: 29%;
+  position: absolute;
+  z-index: -1;
+}
+
+.content_proyects {
+  background-color: #272727;
+  padding: 50px;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 13%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 60px;
+  justify-content: space-evenly;
+}
+.content_proyects h3 {
+  font-size: 35px;
+  color: #ebebeb;
+  margin: 22px;
+  text-align: center;
+}
+
+
+.cards_proyects {
+    width: 280px !important;
+    box-shadow: 0 0 6px 3px rgb(0 0 0 / 25%);
+    height: 300px !important;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ebebeb;
+    color: rgb(39, 39, 39);
+    letter-spacing: 2px;
+    margin: 5px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decor_red{
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+ 
+}
+.link_proy{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*
+====Resposive=======
+*/
+
+@media only screen and (min-width: 1400px) {
+  /* For 4k: */
+
+  .rectangle {
+    width: 1545px;
+    height: 120px;
+    transform: rotate(140deg);
+    background-color: #dfe300;
+
+    left: 0%;
+    top: 38%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+
+  .content_proyects h3 {
+    
+    
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .content_proyects{
+      margin: 0;
+      padding: 10px;
+      flex-direction: row;
+
+  }
+  .cards_proyects {
+    width: 100%;
+  
+  }
+}

@@ -8,227 +8,247 @@
 
  ==============*/
 
-
- 
 .sidenav {
-    z-index: 100;
-    top: 0;
-    left: 0;
+  z-index: 100;
+  top: 0;
+  left: 0;
 
-    background-color: #171717;
-    overflow: hidden;
-    grid-column: x0 / x1;
-    grid-row: y0 / y3;
-    height: 100vh;
-    position: fixed;
-    width: 220px;
-    display: grid;
-    grid-template-rows: [avatar] 100px [menunav] auto;
-
-  }
-  
-  
-  
-
+  background-color: #171717;
+  overflow: hidden;
+  grid-column: x0 / x1;
+  grid-row: y0 / y3;
+  height: 100vh;
+  position: fixed;
+  width: 220px;
+  display: grid;
+  grid-template-rows: [avatar] 100px [menunav] auto;
+}
 
 /*
 =========avatar section========
 */
 
-  .avatar_sidenav{    
-    grid-row: avatar;
-    background-color: #212121;
-    background-image: url(./img/Info-personal.png);
-    background-size: cover;
-    display: flex;
-    border-radius: 12px;
-    margin: 12px;
-    overflow: hidden;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.avatar_sidenav {
+  grid-row: avatar;
+  background-color: #212121;
+  background-image: url(./img/Info-personal.png);
+  background-size: cover;
+  display: flex;
+  border-radius: 12px;
+  margin: 12px;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-  }
+.img_content {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.name_content {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
 
-
-  .img_content{
-  
-    display: flex;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-  }
-  .name_content{
-  
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-   
-   
-  }
-
-  .box_shadow_name{
-    
-    background-color: #494949;
-    color: white;
-    border-radius: 12px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-    margin: 2px;
-    font-size: 14px;
-   
-    
-  }
+.box_shadow_name {
+  background-color: #494949;
+  color: white;
+  border-radius: 12px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin: 2px;
+  font-size: 14px;
+}
 
 /*
 =========nav section========
 */
-  .nav_menu{
-    grid-row: menunav;
-    padding-top: 25px;
-  }
-  .nav_menu div{
-    background-color:#DFE300 ;
-    margin-top: 35px;
-    display: flex;
-    height: 60px;
-    cursor: pointer;
-  }
-  .nav_menu div:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-    background-color: #1b1b1b;
-    box-shadow: 1px 1px 4px 2px #131311;
-   
-  }
-  .nav_menu div:hover a {
-  
-    color: white;
-  }
+.nav_menu {
+  grid-row: menunav;
+  padding-top: 25px;
+}
+.nav_menu button {
+  background-color: #dfe300;
+  margin-top: 35px;
+  display: flex;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+.nav_menu button:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: #1b1b1b;
+  box-shadow: 1px 1px 4px 2px #131311;
+}
+.nav_menu button:hover span {
+  color: white;
+}
 
-  /*==SImbolABout==*/
-  .simbolStyle{
-    width: 50%;
+/*==SImbolABout==*/
+.simbolStyle {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  position: relative;
+}
+.links {
+  width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 20px;
-    position: relative;
-  }
-  .links{
-    width: 50%;
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    font-size: 24px;
+    font-family: "Reem Kufi";
+    font-weight: bold;
+    font-size: 23px;
     line-height: 36px;
+    margin: auto;
     letter-spacing: 0.1em;
-    color: black;
+    color: #383838;
+
+}
+
+.activeB {
+  background: #dfe300;
+}
+
+.iconSideUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: mymove 0.5s infinite;
+  position: relative;
+}
+.iconSideUp button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+@keyframes mymove {
+  0% {
+    top: 0;
   }
+  50% {
+    top: 30px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0;
+  }
+}
 
-  
-
-
-  /*
+.iconUp {
+  color: aliceblue;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hideArr {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: none;
+}
+/*
   ====Resposive=======
   */
 
-  @media only screen and (max-width:800px) {
-    /* For tablets: */
-    .sidenav {
-      grid-column: x0;
-      grid-row: y0;
-      width: 100%;
-      height: auto;
-      grid-template-columns: [avatar] 150px [menunav] auto;
-      grid-template-rows: [avatar] 100px;
-      box-shadow: 1px 1px 6px 3px black;
-      background-image: url(./img/nav-responsive-tablet.png);
-      background-size: cover;
-    }
-    .avatar_sidenav{
-      grid-row: avatar;
-      grid-column: avatar;
-      flex-direction: column;
-      margin: 10px;
-    }
-    .img_content{
-      width: 100%;
-      height: 100%;
-    
-    }
-    .name_content{
-      width: auto;
-    }
-    .nav_menu{
-      grid-column: menunav;
-      grid-row: avatar;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 0;
-      align-items: flex-end;
-    }
-    .simbolStyle{
-      display: none;
-    }
-    .nav_menu div{
-      background-color: #17171700;
-    }
-    .nav_menu div a {
-  
-      color: white;
-    }
-    
-    .nav_menu div:hover {
-      transition: 0.5s;
-      transform: scale(1.1);
-      box-shadow: none;
-      background-color: #17171700;
-      
-    }
-    
-   
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .sidenav {
+    grid-column: x0;
+    grid-row: y0;
+    width: 100%;
+    height: auto;
+    grid-template-columns: [avatar] 150px [menunav] auto;
+    grid-template-rows: [avatar] 100px;
+    box-shadow: 1px 1px 6px 3px black;
+    background-image: url(./img/nav-responsive-tablet.png);
+    background-size: cover;
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .sidenav{
-      grid-template-columns: [colum0] 100%;
-      grid-template-rows: [row0] 50px [row1] auto;
-    }
-    .avatar_sidenav{
-      grid-column: colum0;
+  .avatar_sidenav {
+    grid-row: avatar;
+    grid-column: avatar;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .img_content {
+    width: 100%;
+    height: 100%;
+  }
+  .name_content {
+    width: auto;
+  }
+  .nav_menu {
+    grid-column: menunav;
+    grid-row: avatar;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: flex-end;
+  }
+  .simbolStyle {
+    display: none;
+  }
+  .nav_menu button {
+    background-color: #17171700;
+  }
+  .nav_menu button span {
+    color: white;
+  }
+
+  .nav_menu button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: none;
+    background-color: #17171700;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .sidenav {
+    grid-template-columns: [colum0] 100%;
+    grid-template-rows: [row0] 50px [row1] auto;
+  }
+  .avatar_sidenav {
+    grid-column: colum0;
     grid-row: row0;
     margin: 0;
     grid-column: colum0;
     grid-row: row0;
     margin: 0;
     flex-direction: row;
-    }
-    .img_content{
-      width: 20%;
-      justify-content: end;
-
-    }
-    .name_content{
-      width: 80%;
-    }
-    .nav_menu{
-      grid-column: colum0;
-      grid-row: row1;
-      grid-column: colum0;
+  }
+  .img_content {
+    width: 20%;
+    justify-content: end;
+  }
+  .name_content {
+    width: 80%;
+  }
+  .nav_menu {
+    grid-column: colum0;
+    grid-row: row1;
+    grid-column: colum0;
     grid-row: row1;
     align-items: center;
     flex-direction: column;
-    }
-    .nav_menu div{
-      background-color: #17171700;
-      margin-top: 6px;
-    height: auto;
-    }
-    .nav_menu div a {
-  
-      color: white;
-    }
   }
+  .nav_menu button {
+    background-color: #17171700;
+    margin-top: 6px;
+    height: auto;
+  }
+  .nav_menu button span {
+    color: white;
+  }
+  .links {
+    display: block;
+  }
+}

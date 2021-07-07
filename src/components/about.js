@@ -13,21 +13,24 @@ import {
   rectangle_three,
   content_img_languages,
   cards_programming
+
 } from "./about.module.css";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const About = () => {
+
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 200,
       disable: window.innerWidth < 1024,
     });
   }, []);
 
   return (
-    <section className={about}>
+    <section id="about-section" className={about}>
+      <h1>About me</h1>
       <div data-aos="fade-right" className={aboutMe}>
         <span className={rectangle}></span>
         <div className={content}>
@@ -73,47 +76,35 @@ const About = () => {
           <br />
           <br />
           <div className={titles}>
-            <p>Programming languages</p>
+            <p>Programming languages <br/> and <br/>Data Bases</p>
             <span></span>
           </div>
           <div className={content_img_languages}>
 
             <div className={cards_programming}>
+              <p>Java</p>
 
             </div>
             <div className={cards_programming}>
-
+              <p>Java<br/>Script</p>
             </div>
             <div className={cards_programming}>
-
+              <p>ReactJS</p>
             </div>
             <div className={cards_programming}>
-
+              <p>Python</p>
             </div>
             <div className={cards_programming}>
-
+              <p>React<br/>Native</p>
             </div>
             <div className={cards_programming}>
-
+              <p>MYSQL</p>
             </div>
             <div className={cards_programming}>
-
+              <p>MongoDB</p>
             </div>
-            <div className={cards_programming}>
-
-            </div>
-            <div className={cards_programming}>
-
-            </div>
-            <div className={cards_programming}>
-
-            </div>
-            <div className={cards_programming}>
-
-            </div>
-            <div className={cards_programming}>
-
-            </div>
+           
+           
 
           </div>
         </div>
