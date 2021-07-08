@@ -171,6 +171,7 @@
     box-shadow: 1px 1px 6px 3px black;
     background-image: url(./img/nav-responsive-tablet.png);
     background-size: cover;
+    z-index: 9000;
   }
   .avatar_sidenav {
     grid-row: avatar;

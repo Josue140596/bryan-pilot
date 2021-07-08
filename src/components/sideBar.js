@@ -79,7 +79,7 @@ useEffect(() => {
 
       {/* Arrow up */}
       <div className={scrollPosition>=150 ? iconSideUp: hideArr}>
-        <button onClick={() => scrollTo('#first-content')}>
+        <button onClick={() => scrollTo('#first-content')} aria-label="Left Align">
 
           <FontAwesomeIcon
                   className={iconUp}

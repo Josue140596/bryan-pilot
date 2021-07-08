@@ -74,6 +74,12 @@
 .icons_content a {
   text-decoration: none;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
 }
 .iconEachOne {
   margin: 10px;

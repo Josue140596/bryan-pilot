@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: "HI I'M BRYAN",
-    subTitle: "I'M DEVELOPER"
+    title: `HI I'M BRYAN`,
+    subTitle: `M DEVELOPER`,
+    description: `Web Developer, software engineer, Java, JavaScript, Python`,
+    author: `Bryan Sánchez`,
   },
 
   
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { THE_FLAG: false },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,12 +22,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        
-        start_url: '/',
-       
-        icon: 'src/components/img/icon-f.png',
+        name:`Im Bryan`,
+        short_name:`Bryan`,
+        start_url: `/`,
+        background_color: `##1b1b1b`,
+        theme_color: `#171717`,
+        display: `standalone`,
+        icon: `src/components/img/icon-f.png`,
       },
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -46,6 +53,7 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    
     `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
 };

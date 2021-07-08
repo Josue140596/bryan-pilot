@@ -127,33 +127,37 @@ const Footer = () => {
     <footer id="contact-section" className={footer}>
       <h1>Contact</h1>
       <form className={section_email} onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="nombre">Your name:</label>
+        <label  htmlFor="nombre">Your name:</label>
         <input
-         
+          id="nombre"
           name="nombre"
           type="text"
           {...register("name", { required: true, minLength:2 })}
-        />
+          />
         {errors.name && <span>Name is required</span>}
 
-        <label htmlFor="email">Your email Address:</label>
+        <label  htmlFor="email">Your email Address:</label>
         <input
-        
+          id="email"
+          name="email"
           type="email"
           {...register("email", { required: true })}
-        />
+          />
         {errors.email && <span>Email is required</span>}
 
-        <label htmlFor="enquiry">Subject:</label>
+        <label  htmlFor="enquiry">Subject:</label>
         <input
-      
+          id="enquiry"
+          name="enquiry"
+          type="text"
           {...register("enquiry", { required: true })}
-        />
+          />
         {errors.enquiry && <span>Subject is required</span>}
 
-        <label htmlFor="message">Message:</label>
+        <label  htmlFor="message">Message:</label>
         <textarea
-         
+          id="message"
+          name="message"
           {...register("message", { required: true })}
         ></textarea>
         {errors.message && <span>Message is required</span>}
@@ -177,6 +181,7 @@ const Footer = () => {
               icon={faGithubAlt}
               size="3x"
             />
+            GitHub
           </a>
           <a
             href="https://www.facebook.com/sanch.loms.7/"
@@ -189,6 +194,7 @@ const Footer = () => {
               icon={faFacebookF}
               size="3x"
             />
+            Facebook
           </a>
           <a
             href="https://www.linkedin.com/in/bryan-s%C3%A1nchez-rodr%C3%ADguez-82b29b1a9/"
@@ -201,6 +207,7 @@ const Footer = () => {
               icon={faLinkedin}
               size="3x"
             />
+            Linkedin
           </a>
           <a href="mailto:josue140596@gmail.com">
             <FontAwesomeIcon
@@ -209,6 +216,7 @@ const Footer = () => {
               icon={faEnvelope}
               size="3x"
             />
+            Email
           </a>
           <a
             href="https://twitter.com/LomsSanch"
@@ -221,6 +229,7 @@ const Footer = () => {
               icon={faTwitter}
               size="3x"
             />
+            Twitter
           </a>
         </div>
         <span></span>

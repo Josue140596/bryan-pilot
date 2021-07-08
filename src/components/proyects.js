@@ -42,6 +42,7 @@ const Proyects = () => {
     graphql`
       {
         allMarkdownRemark {
+        totalCount
           edges {
             node {
               id
@@ -58,6 +59,7 @@ const Proyects = () => {
               fields {
                 slug
               }
+              excerpt
             }
           }
         }
@@ -99,7 +101,7 @@ const Proyects = () => {
       <h1>Proyects</h1>
       <span className={rectangle}></span>
       <div className={content_proyects}>
-        <h3>JavaScript</h3>
+        <h2>JavaScript</h2>
         <Swiper
           autoplay={{
             delay: 2500,
@@ -118,7 +120,7 @@ const Proyects = () => {
           })}
         </Swiper>
 
-        <h3>Java</h3>
+        <h2>Java</h2>
         <Swiper
           autoplay={{
             delay: 2500,

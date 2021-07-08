@@ -36,6 +36,7 @@ import {
   faPlayCircle,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
+import SEO from "../components/seo";
 
 const TemplatesProyects = ({ data }) => {
   const [openModal, setopenModal] = useState(false);
@@ -51,6 +52,7 @@ const TemplatesProyects = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <section id="proyects" className={proyects_content_md}>
+      <SEO title={post.frontmatter.title} description={post.excerpt}/>
       <title>{post.frontmatter.title}</title>
       <div
         className={play_with_back}
@@ -216,6 +218,7 @@ export const query = graphql`
         Information
         Img
       }
+      excerpt
     }
   }
 `;

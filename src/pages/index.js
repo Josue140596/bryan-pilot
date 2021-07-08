@@ -13,16 +13,17 @@ import Footer from "../components/footer";
 import { contentHome } from "../styles/global.module.css";
 // Data graphql
 import { graphql } from "gatsby";
+import SEO from "../components/seo";
 
 
 
-const Home = () => {
+export default function  Home ({data})  {
 
   
 
   return (
     <div id="first-content" className={contentHome}>
-      <title>I'm Bryan</title>
+      <SEO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
       {/*=============================== 
         Section of content S I D E N A V
       ================================*/}
@@ -46,8 +47,11 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        author
       }
+    
     }
   }`
 
-export default Home;
+
