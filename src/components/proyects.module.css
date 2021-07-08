@@ -38,7 +38,7 @@
   margin: 60px;
   justify-content: space-evenly;
 }
-.content_proyects h3 {
+.content_proyects h2 {
   font-size: 35px;
   color: #ebebeb;
   margin: 22px;
@@ -99,7 +99,7 @@
 @media only screen and (max-width: 800px) {
   /* For tablets: */
 
-  .content_proyects h3 {
+  .content_proyects h2 {
     
     
     text-align: start;
@@ -108,13 +108,18 @@
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
   .content_proyects{
-      margin: 0;
-      padding: 10px;
-      flex-direction: row;
-
+    margin: 0;
+    padding: 10px;
+    flex-direction: row;
+    
   }
   .cards_proyects {
     width: 100%;
-  
+    
+  }
+  .content_proyects h2 {
+    
+    
+    text-align: unset;
   }
 }

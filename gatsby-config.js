@@ -25,7 +25,7 @@ module.exports = {
         name:`Im Bryan`,
         short_name:`Bryan`,
         start_url: `/`,
-        background_color: `##1b1b1b`,
+        background_color: `#1b1b1b`,
         theme_color: `#171717`,
         display: `standalone`,
         icon: `src/components/img/icon-f.png`,

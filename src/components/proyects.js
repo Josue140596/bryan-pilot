@@ -79,10 +79,10 @@ const Proyects = () => {
           to={node.fields.slug}
         >
       <Link className={link_proy} to={node.fields.slug} style={{textDecoration:"none", color:"inherit"}}>
-          <h2>{node.frontmatter.title}</h2>
+          <h3>{node.frontmatter.title}</h3>
 
           <p key={node.id}>Language Code: {node.frontmatter.Language}</p>
-          <img src={node.frontmatter.Img} alt={node.frontmatter.title} />
+          <img src={node.frontmatter.Img} width="130px" height="120px" alt={node.frontmatter.title} />
 
           <span
             style={{ backgroundColor: node.frontmatter.color }}
