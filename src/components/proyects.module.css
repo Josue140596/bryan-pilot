@@ -34,7 +34,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+ 
   margin: 60px;
   justify-content: space-evenly;
 }
@@ -77,6 +77,10 @@
   flex-direction: row;
 }
 
+.swiper_style{
+  width: 100% !important;
+}
+
 /*
 ====Resposive=======
 */
@@ -104,6 +108,8 @@
     
     text-align: start;
   }
+ 
+
 }
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
@@ -111,15 +117,13 @@
     margin: 0;
     padding: 10px;
     flex-direction: row;
+    flex-wrap: wrap;
     
   }
-  .cards_proyects {
-    width: 100%;
-    
-  }
-  .content_proyects h2 {
-    
-    
-    text-align: unset;
-  }
+ 
+
+
+ 
+
+
 }
